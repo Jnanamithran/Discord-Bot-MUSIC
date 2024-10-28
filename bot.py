@@ -147,4 +147,6 @@ async def on_ready():
         await channel.send("Bot is now online!")  # Send a message to the specified channel
     print(f'Logged in as {bot.user}')    
 
-bot.run('MTI5NzIxMzQ5Mzc2MTY3MTIyOA.GzEIBz.GoieVJjmsK4J8fZMVmE6bzlEh9s2sPAG864EWI')
+if __name__ == "__main__":
+    token = input("Please enter your bot token: ")  # Prompt for the token
+    bot.run(token)  # Run the bot with the provided token
